@@ -194,25 +194,25 @@ nav a {
 }
 
 .offers-title {
-    background-image: url(/res/imgs/special-offers.jpg);
+    background-image: url(../imgs/special-offers.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .one-one {
-    background-image: url(/res/imgs/1+1.jpg);
+    background-image: url(../imgs/1+1.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .twenty-off {
-    background-image: url(/res/imgs/twenty-off.jpg);
+    background-image: url(../imgs/twenty-off.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .todays-deal {
-    background-image: url(/res/imgs/todays-deal.jpg);
+    background-image: url(../imgs/todays-deal.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -225,7 +225,7 @@ h2 {
     font-weight: 600;
     margin: 0;
     color: #fff;
-    background-image: url(/res/imgs/wall.jpg);
+    background-image: url(../imgs/wall.jpg);
     background-size: cover;
     background-position: bottom;
     position: relative;
@@ -498,54 +498,54 @@ main {
 }
 
 .dish1 {
-    background-image: url(/res/imgs/english-breakfast.jpg);
+    background-image: url(../imgs/english-breakfast.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .dish2 {
-    background-image: url(/res/imgs/eggs-on-toast.jpg);
+    background-image: url(../imgs/eggs-on-toast.jpg);
     background-size: cover;
 }
 
 .dish3 {
-    background-image: url(/res/imgs/pancakes.jpg);
+    background-image: url(../imgs/pancakes.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .dish4 {
-    background-image: url(/res/imgs/chilli.jpg);
+    background-image: url(../imgs/chilli.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .dish5 {
-    background-image: url(/res/imgs/toad-in-a-hole.jpg);
+    background-image: url(../imgs/toad-in-a-hole.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .dish6 {
-    background-image: url(/res/imgs/veg-stew.jpg);
+    background-image: url(../imgs/veg-stew.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .dish7 {
-    background-image: url(/res/imgs/pizza.jpg);
+    background-image: url(../imgs/pizza.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .dish8 {
-    background-image: url(/res/imgs/salad.jpg);
+    background-image: url(../imgs/salad.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .dish9 {
-    background-image: url(/res/imgs/noodles.jpg);
+    background-image: url(../imgs/noodles.jpg);
     background-size: cover;
     background-position: center;
 }
