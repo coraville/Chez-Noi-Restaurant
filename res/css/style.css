@@ -107,7 +107,7 @@ nav a {
 }
 
 .header-pgs {
-    background-image: url(/res/imgs/hero-blue.jpg);
+    background-image: url(../imgs/hero-blue.jpg);
     background-size: cover;
     background-position: center;
     padding: 0 .5em 2em;
@@ -116,7 +116,7 @@ nav a {
 /* Hero Section
 ============================================= */
 .cont-hero {
-    background-image: url(/res/imgs/hero-blue.jpg);
+    background-image: url(../imgs/hero-blue.jpg);
     background-size: cover;
     background-position: center;
     padding: 10em .5em 5em;
