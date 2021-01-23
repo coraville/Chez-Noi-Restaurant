@@ -1,0 +1,967 @@
+
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cart {
+    width: 1em;
+    height: auto;
+}
+
+
+/* Mobile CSS Here-0000
+============================================= */
+
+/* Typography
+============================================= */
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    letter-spacing: .15em;
+    padding: .5em 0 1.5em;
+    margin: 0;
+}
+
+h1 span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    color: white;
+    letter-spacing: .09em;
+}
+
+
+
+
+/* Header
+============================================= */
+header {
+        position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.header-wrap {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo {
+    background-color: transparent;
+    width: 12em;
+}
+
+nav {
+    height: auto;
+    align-self: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: .5em 1.25em;
+}
+
+nav a {
+    font-size: .9em;
+    font-weight: 600;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header-pgs {
+    background-image: url(/res/imgs/hero-blue.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 .5em 2em;
+}
+
+/* Hero Section
+============================================= */
+.cont-hero {
+    background-image: url(/res/imgs/hero-blue.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em .5em 5em;
+}
+
+.hero {
+    padding-top: 3em;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.25rem;
+    border: 2px solid #20201f;
+    padding: .75em 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #20201f;
+}
+
+.btn-contrast {
+    color: #fff100;
+    border-color: #fff100;
+}
+
+.btn-contrast:hover {
+    color: black;
+    border: #fff100 2px solid;
+    background: #fff100;
+}
+
+/* Special Offers
+============================================= */
+.offers {
+    /* background: #fff100; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5em 0;
+}
+
+.div-1 {
+    height: 6.5em;
+    text-align: center;
+    margin: 1.5em 1em 0;
+    position: relative;
+    /* opacity: 80%; */
+    font-weight: 800;
+    /* font-size: 1.5em; */
+}
+
+.div-1:last-of-type {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.a-transparent-bkg {
+    position: absolute;
+    top: 2.25em;
+    left: 20%;
+    display: inline-block;
+    width: 60%;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    background: rgba(18, 29, 46, .6);
+    outline: #fff100 2px solid; 
+    /* outline-offset: .5em; */
+}
+
+.offers a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    height: 2.5em;
+}
+
+.offers-title {
+    background-image: url(/res/imgs/special-offers.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.one-one {
+    background-image: url(/res/imgs/1+1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.twenty-off {
+    background-image: url(/res/imgs/twenty-off.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.todays-deal {
+    background-image: url(/res/imgs/todays-deal.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Gallery Section
+============================================= */
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    background-image: url(/res/imgs/wall.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    padding: 1.5em .5em 2em;
+}
+
+h2 span {
+    font-family: 'Raleway', sans-serif;
+    color: #fff100;
+    font-weight: 200;
+    font-size: 1.25em;
+}
+
+.down-arrow {
+    width: 1em;
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.not-available {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows:100px;
+    grid-auto-flow: dense;
+}
+
+.not-available img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.img-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.w-1 {
+    grid-column: span 1;
+}
+.w-2 {
+    grid-column: span 2;
+}
+.w-3 {
+    grid-column: span 3;
+}
+
+.h-1 {
+    grid-row: span 1;
+}
+.h-2 {
+    grid-row: span 2;
+}
+.h-3 {
+    grid-row: span 3;
+}
+
+
+/* Footer
+============================================= */
+footer {
+    background: #1d2535;
+    color: #fff;
+    padding: 5em 2em 2em 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: .8em;
+}
+
+footer p {
+    margin: 0 0 1em;
+    text-align: start;
+    letter-spacing: .1em;
+}
+
+.footer-link-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.ft-list ul{
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    justify-self: center;
+    padding: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact {
+    color: #fff100;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+.social a {
+    font-weight: 600;
+    color: #fff100
+}
+
+
+/* Menu Page
+============================================= */
+main {
+    width: 100%;
+}
+
+.menu-intro {
+    background-color: #fff100;
+    padding: 12em .5rem 3em;
+    margin-bottom: 2em;
+}
+
+#menu-intro {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-h1 {
+    color: #20201f;
+    font-size: 1.5em;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+    border-bottom: #20201f 2px solid;
+    margin: 0 auto;
+}
+
+.menu-intro p {
+    font-weight: 400;
+    text-align: start;
+    padding: 0 .5em;
+}
+
+.menu-intro p span {
+    font-weight: 600;
+}
+
+.menu-intro-p-second-part {
+    font-weight: 400;
+    display: block;
+}
+
+.meals-of-day {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn-meals-of-the-day {
+    font-size: 1em;
+    padding: .25em .5em;
+}
+
+.menu-sections-wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.menu-intro, .menu-breakfast, .menu-dinner, .menu-tea {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.meals-of-day a {
+    font-weight: bold;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em .5em 2em;
+    background-color: #20201f;
+    color: #fff;
+    position: relative;
+}
+
+.intro img {
+    width: 1em;
+    height: auto;
+    position: absolute;
+    bottom: .5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.intro p {
+    margin: 0;
+}
+
+.intro h5 {
+    font-size: 1.25em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.dishes-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dish {
+    /* border: 2px solid #20201f; */
+    margin: .5em auto;
+    width: 80%;
+    height: 8em;
+    position: relative;
+    color: white;
+    /* outline: #fff100 solid 2px;
+    outline-offset: -8px; */
+}
+
+.btn-dish {
+    margin-bottom: .5em;
+    padding: .5em 2em;
+    font-size: .75em;
+    font-weight: 600;
+    position: absolute;
+    bottom: .5em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #20201f;
+    /* border-color: #fff100; */
+    background-color: #fff100;
+}
+
+.dish div {
+    margin: .4em auto;
+    background-color: rgb(32, 32, 31, .6);
+    height: 90%;
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: #fff100 solid 2px;
+}
+
+.dish p {
+    opacity: 100%;
+    font-size: .8em;
+    margin: .5em 0;
+}
+
+.dish h4 {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin: .5em .5em;
+}
+
+.dish1 {
+    background-image: url(/res/imgs/english-breakfast.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dish2 {
+    background-image: url(/res/imgs/eggs-on-toast.jpg);
+    background-size: cover;
+}
+
+.dish3 {
+    background-image: url(/res/imgs/pancakes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dish4 {
+    background-image: url(/res/imgs/chilli.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dish5 {
+    background-image: url(/res/imgs/toad-in-a-hole.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dish6 {
+    background-image: url(/res/imgs/veg-stew.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dish7 {
+    background-image: url(/res/imgs/pizza.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dish8 {
+    background-image: url(/res/imgs/salad.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dish9 {
+    background-image: url(/res/imgs/noodles.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+
+/* Special Offers Page
+============================================= */
+
+.offers-main h1 {
+    padding: 7em 0 2em;
+    background-color: hsl(60, 2%, 12%);
+}
+
+.cont1 {
+    padding: 2em 0 1.2em;
+    /* outline: hsl(57, 100%, 50%) solid 2px;
+    outline-offset: -1em; */
+    background-color: #1d2535;
+    color: white;
+    margin: 0 auto;
+}
+
+.cont1 h4 {
+    margin: 0;
+    display: block;
+    font-size: 1.2em;
+}
+
+.cont1 img {
+    width: 1em;
+}
+
+.cont1 span {
+    display: block;
+}
+
+.cont2 figure {
+    margin: 1rem 2rem 3rem;
+    position: relative;
+}
+
+.cont2 img {
+    width: 100%;
+    height: auto;
+    max-height: 9em;
+    object-fit: cover;
+}
+
+.cont2 figcaption {
+    margin: 0 auto .4em ;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.btn-offer {
+    bottom: 2.5em;
+    font-size: .8em;
+    background-color: hsl(57, 100%, 50%);
+    margin-bottom: .5em;
+    padding: .6em 4em;
+    font-size: .75em;
+    font-weight: 600;
+    color: #20201f;
+}
+
+
+/* Media 1
+============================================= */
+@media (min-width: 25rem) {
+    /* Offers
+============================================= */
+    .offers {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1.5em 0;
+    }
+
+    .div-1 {
+        height: 6em;
+        width: 45%;
+        margin: .5em;
+    }
+
+    .a-transparent-bkg {
+        top: 2.55em;
+        font-size: .85em;
+    }
+    .div-1:last-of-type {
+        margin-bottom: .5em;
+        text-align: center;
+    }
+
+    /* Gallery
+============================================= */
+    h2 {
+        padding: 3em .5em 2.5em;
+
+    }
+
+    .not-available {
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 5px;
+    }
+
+    .h-1 {
+        grid-row: span 2;
+    }
+
+    .w-3 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    /* Footer
+============================================= */
+    .footer-wrap {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    p {
+        width: 50%;
+    }
+
+    .ft-nav {
+        padding-right: 1em;
+    }
+
+    .ft-extra {
+        padding-left: 1em;
+    }
+
+    /* Menu Page
+============================================= */
+    .menu-intro-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-intro-wrap p:last-of-type {
+        text-align: right;
+    }
+
+    .dish p {
+        font-size: .95em;
+    }
+
+    .btn-dish {
+        margin: 0; 
+        right: 1.5em;
+        left: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+    }
+
+    /* Offers Page
+============================================= */
+h1 {
+    margin-bottom: .5em;
+}
+.cont1 {
+    padding: 1em;
+    outline-width: 4px;
+    outline-offset: -.5em;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.cont1 img {
+    display: none;
+}
+
+.cont1 span {
+    display: inline;
+}
+
+#nice {
+    display: none;
+}
+
+.cont2 {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 38em;
+    margin: 0 auto;
+}
+
+.cont2 figure {
+    margin: .5em .5em 3em;
+    position: relative;
+}
+
+.cont2 figure img {
+    width: 100%;
+    height: 9em;
+    object-fit: cover;
+}
+
+.btn-offer {
+    font-size: .8em;
+    padding: .5em 2em;
+    margin-top: .3em;
+    border: 2px solid #fff100;
+    color: #fff100;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(95, 95, 91, 0.5);
+}
+
+footer {
+    margin: 0;
+}
+
+}
+
+/* Media 2
+============================================= */
+@media (min-width: 38rem) {
+    .header-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-intro {
+        margin-bottom: 0;
+    }
+
+    .menu-intro-wrap, .meals-of-day {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .intro {
+        margin: 3em 0 0;
+        padding: 1.5em 0 1em;
+        color: #20201f;
+        background-color: #fff;
+        /* border: #20201f 4px solid; */
+    }
+
+    .dishes-wrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dish {
+        width: 30%;
+        height: 10em;
+    }
+
+    .dish p {
+    margin: 0 auto;
+    width: 100%;
+    font-size: .8em;
+    }
+
+    .dish div {
+        height: 92%;
+    }
+
+    .btn-dish {
+        bottom: 1.5em;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+/* Media 3
+============================================= */
+@media (min-width: 44rem) {
+    /* Header
+============================================= */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        padding: 1em 0 0 1.5em;
+    }
+
+    nav {
+        padding-right: 1.5em;
+    }
+
+    /* Hero
+============================================= */
+    .hero {
+        padding: 0;
+    }
+
+    /* Offers
+============================================= */
+    .offers {
+        flex-wrap: nowrap;
+        padding: 3em 0;
+        justify-content: space-evenly;
+    }
+
+    .div-1 {
+        height: 10em;
+        width: 10em;
+        margin: .5em;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px 2px rgba(27, 36, 48, 40%);
+    }
+
+    .a-transparent-bkg {
+        top: 42%;
+        font-size: .85em;
+    }
+
+    /* Gallery
+============================================= */
+    .not-available {
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows:200px;
+        grid-gap: 10px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        padding: 3em .5em 3em;
+    }
+
+    h2 span {
+        display: block;
+    }
+
+    /* Footer
+============================================= */
+.social {
+    justify-content: center;
+}
+
+.social a {
+    padding: 0 3em;;
+}
+
+    /* Menu Page
+============================================= */
+    header {
+        height: 12em;
+    }
+
+    .menu-intro {
+        padding-top: 15em;
+    }
+
+
+    /* Offers Page
+============================================= */
+.offers-main h1 {
+    padding-top: 15.5rem;
+}
+
+.cont1 {
+    max-width: 44rem;
+}
+
+}
+
+
+/* Media 4
+============================================= */
+@media (min-width: 64rem) {
+    /* Offers Page
+============================================= */
+    .offers-sections-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+
+    .offers-sections-wrapper section {
+        width: 30%;
+        height: auto;
+        background-color: rgb(221, 221, 221);
+        margin: 1em 0 1em;
+        padding: 1em;
+    }
+
+    .cont1, .cont2 {
+        width: 95%;
+    }
+
+    .cont1 {
+        outline: none;
+        background-color: #1d2535;
+        color:white;
+    }
+
+    .cont2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offers-sections-wrapper figure {
+        margin: .5em 0 1.5em;
+        width: 100%;
+    }
+
+}
+
